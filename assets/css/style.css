@@ -1,0 +1,113 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  height: 40px;
+}
+
+nav a img {
+  height: 100%;
+  width: 100%;
+}
+
+#hero {
+  background-image: url("../img/hero/brown-hens-farm.jpg");
+  background-size: cover;
+  -webkit-backdrop-filter: brightness(0.3);
+  backdrop-filter: brightness(0.1);
+  background-position: center;
+}
+
+#hero .pembungkus-hero {
+  -webkit-backdrop-filter: brightness(0.1);
+  backdrop-filter: brightness(0.5);
+}
+
+#hero .pembungkus-hero img {
+  height: 100%;
+  width: 100%;
+}
+
+#memilih .card-body {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#memilih .card-body:hover {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top: -10px;
+}
+
+#kategori .card {
+  border-radius: 19px;
+  border: none;
+  width: 100%;
+}
+
+#kategori .card img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#kategori .card .card-img-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0;
+}
+
+#kategori .card .card-img-overlay .team-bungkus {
+  background: rgba(255, 193, 7, 0.8);
+  border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.3s ease-in;
+  transition: visibility 0s, opacity 0.3s ease-in;
+}
+
+#kategori .card:hover .card-img-overlay .team-bungkus {
+  visibility: visible;
+  opacity: 1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */
