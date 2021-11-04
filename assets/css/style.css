@@ -15,7 +15,7 @@ nav a img {
 }
 
 #hero {
-  background-image: url("../img/hero/brown-hens-farm.jpg");
+  background-image: url("../img/hero/brown-hens-farm-min.jpg");
   background-size: cover;
   -webkit-backdrop-filter: brightness(0.3);
   backdrop-filter: brightness(0.1);
