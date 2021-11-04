@@ -28,7 +28,6 @@ nav {
   .pembungkus-hero {
     -webkit-backdrop-filter: brightness(0.1);
     backdrop-filter: brightness(0.5);
-    // background-image: linear-gradient(to right, #000, transparent);
     img {
       height: 100%;
       width: 100%;
@@ -65,7 +64,7 @@ nav {
       justify-content: center;
       align-items: flex-end;
       padding: 0;
-      .team-bungkus {
+      .kategori-bungkus {
         background: rgba(255, 193, 7, 0.8);
         border-radius: 15px;
         visibility: hidden;
@@ -76,11 +75,14 @@ nav {
   }
   .card:hover {
     .card-img-overlay {
-      .team-bungkus {
+      .kategori-bungkus {
         visibility: visible;
         opacity: 1;
       }
     }
+  }
+  .card-kategori {
+    display: none;
   }
 }
 // Kategori End
@@ -93,7 +95,6 @@ nav {
   }
 
   .swiper-slide {
-    text-align: center;
     transition: 0.3s;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -140,3 +141,83 @@ nav {
   }
 }
 // Footer End
+
+@media screen and (max-width: 991px) {
+  #hero {
+    .pembungkus-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      -webkit-backdrop-filter: brightness(0.1);
+      backdrop-filter: brightness(0.3);
+      height: 100vh;
+      img {
+        display: none;
+      }
+    }
+  }
+
+  #memilih {
+    .pembungkus-memilih {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+
+  #kategori {
+    .pembungkus-kategori {
+      display: grid;
+      grid-template-columns: auto auto;
+      .card-kategori {
+        display: block;
+      }
+    }
+    .card:hover {
+      .card-img-overlay {
+        .kategori-bungkus {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  #terlaris {
+    h5 {
+      font-size: 12px;
+    }
+    p,
+    a {
+      font-size: 10px;
+    }
+  }
+
+  #langkah {
+    img {
+      padding: 0 !important;
+    }
+  }
+
+  #footer {
+    .logo-footer {
+      text-align: center;
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #memilih {
+    .pembungkus-memilih {
+      h5 {
+        font-size: 12px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

@@ -69,7 +69,7 @@ nav a img {
   padding: 0;
 }
 
-#kategori .card .card-img-overlay .team-bungkus {
+#kategori .card .card-img-overlay .kategori-bungkus {
   background: rgba(255, 193, 7, 0.8);
   border-radius: 15px;
   visibility: hidden;
@@ -78,9 +78,13 @@ nav a img {
   transition: visibility 0s, opacity 0.3s ease-in;
 }
 
-#kategori .card:hover .card-img-overlay .team-bungkus {
+#kategori .card:hover .card-img-overlay .kategori-bungkus {
   visibility: visible;
   opacity: 1;
+}
+
+#kategori .card-kategori {
+  display: none;
 }
 
 #terlaris .swiper {
@@ -89,7 +93,6 @@ nav a img {
 }
 
 #terlaris .swiper-slide {
-  text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   /* Center slide text vertically */
@@ -127,5 +130,70 @@ nav a img {
 #footer a {
   text-decoration: none;
   color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  #hero .pembungkus-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-backdrop-filter: brightness(0.1);
+    backdrop-filter: brightness(0.3);
+    height: 100vh;
+  }
+  #hero .pembungkus-hero img {
+    display: none;
+  }
+  #memilih .pembungkus-memilih {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  #kategori .pembungkus-kategori {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  #kategori .pembungkus-kategori .card-kategori {
+    display: block;
+  }
+  #kategori .card:hover .card-img-overlay .kategori-bungkus {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #terlaris h5 {
+    font-size: 12px;
+  }
+  #terlaris p,
+  #terlaris a {
+    font-size: 10px;
+  }
+  #langkah img {
+    padding: 0 !important;
+  }
+  #footer .logo-footer {
+    text-align: center;
+  }
+  #footer .logo-footer img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #memilih .pembungkus-memilih h5 {
+    font-size: 12px;
+  }
+  #memilih .pembungkus-memilih p {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

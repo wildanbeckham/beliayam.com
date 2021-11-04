@@ -1,8 +1,8 @@
 function myFunction(x) {
   if (x.matches) {
     var swiper = new Swiper('.mySwiper', {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 2,
+      spaceBetween: 10,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
