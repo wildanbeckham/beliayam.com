@@ -19,18 +19,6 @@ nav a img {
   width: 100%;
 }
 
-#hero #hero1 {
-  background-image: url("../img/hero/1.jpg");
-}
-
-#hero #hero2 {
-  background-image: url("../img/hero/2.jpg");
-}
-
-#hero #hero3 {
-  background-image: url("../img/hero/3.jpg");
-}
-
 #hero #hero1,
 #hero #hero2,
 #hero #hero3 {
