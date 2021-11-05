@@ -28,6 +28,19 @@ function myFunction(x) {
   }
 }
 
+var swiper = new Swiper('.mySwiper-hero', {
+  spaceBetween: 0,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
 var x = window.matchMedia('(max-width: 750px)');
 myFunction(x); // Call listener function at run time
 x.addListener(myFunction); // Attach listener function on state changes
