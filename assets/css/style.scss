@@ -158,21 +158,6 @@ nav {
 // Footer End
 
 @media screen and (max-width: 991px) {
-  #hero {
-    .pembungkus-hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      -webkit-backdrop-filter: brightness(0.1);
-      backdrop-filter: brightness(0.3);
-      height: 100vh;
-      img {
-        display: none;
-      }
-    }
-  }
-
   #memilih {
     .pembungkus-memilih {
       display: grid;
