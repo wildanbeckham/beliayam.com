@@ -51,7 +51,7 @@ nav a img {
       -ms-flex-align: center;
           align-items: center;
   -webkit-backdrop-filter: brightness(0.1);
-  backdrop-filter: brightness(0.5);
+  backdrop-filter: brightness(0.4);
 }
 
 #hero .swiper {
@@ -61,6 +61,7 @@ nav a img {
 
 #hero .swiper-pagination-bullet {
   background-color: var(--second);
+  padding: 10px;
 }
 
 #memilih .card-body {

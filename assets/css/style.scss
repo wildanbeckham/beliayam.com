@@ -46,7 +46,7 @@ nav {
       display: flex;
       align-items: center;
       -webkit-backdrop-filter: brightness(0.1);
-      backdrop-filter: brightness(0.5);
+      backdrop-filter: brightness(0.4);
     }
   }
   .swiper {
@@ -55,6 +55,7 @@ nav {
   }
   .swiper-pagination-bullet {
     background-color: var(--second);
+    padding: 10px;
   }
 }
 // Hero End
