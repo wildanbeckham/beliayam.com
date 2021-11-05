@@ -227,5 +227,13 @@ nav a img {
   #memilih .pembungkus-memilih p {
     font-size: 10px;
   }
+  #kategori .pembungkus-kategori .card-kategori p {
+    font-size: 10px;
+  }
+  #kategori .pembungkus-kategori .card-kategori h5,
+  #kategori .pembungkus-kategori .card-kategori a {
+    font-size: 12px;
+    padding: 5px 15px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
