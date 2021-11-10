@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Icon Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Swipper JS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 fixed-top bg-light shadow navbar-light">
+      <div class="container">
+        <a class="navbar-brand my-auto" href="#"><img src="./assets/img/navbar/logo_navbar.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./kategori.html">Kategori</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./keranjang.html">Keranjang</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item border-end">
+              <a class="nav-link fw-bold" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Kategori -->
+    <section class="py-5" id="kategori-page">
+      <div class="container py-5">
+        <div class="row pt-5">
+          <div class="col pt-5">
+            <ul class="nav nav-tabs row justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item col-lg-3" role="presentation">
+                <button class="nav-link" id="pejantan-tab" data-bs-toggle="tab" data-bs-target="#pejantan" type="button" role="tab" aria-controls="pejantan" aria-selected="true">
+                  <div>
+                    <img src="./assets/img/kategori/1.svg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Pejantan</h5>
+                    </div>
+                  </div>
+                </button>
+              </li>
+              <li class="nav-item col-lg-3" role="presentation">
+                <button class="nav-link" id="kampung-tab" data-bs-toggle="tab" data-bs-target="#kampung" type="button" role="tab" aria-controls="kampung" aria-selected="false">
+                  <div>
+                    <img src="./assets/img/kategori/2.svg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Kampung</h5>
+                    </div>
+                  </div>
+                </button>
+              </li>
+              <li class="nav-item col-lg-3" role="presentation">
+                <button class="nav-link" id="broiler-tab" data-bs-toggle="tab" data-bs-target="#broiler" type="button" role="tab" aria-controls="broiler" aria-selected="false">
+                  <div>
+                    <img src="./assets/img/kategori/3.svg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Broiler</h5>
+                    </div>
+                  </div>
+                </button>
+              </li>
+              <li class="nav-item col-lg-3" role="presentation">
+                <button class="nav-link" id="lainnya-tab" data-bs-toggle="tab" data-bs-target="#lainnya" type="button" role="tab" aria-controls="lainnya" aria-selected="false">
+                  <div>
+                    <img src="./assets/img/kategori/4.svg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Pilihan lainnya</h5>
+                    </div>
+                  </div>
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content pt-5" id="myTabContent">
+              <div class="tab-pane fade show" id="pejantan" role="tabpanel" aria-labelledby="pejantan-tab">
+                <div class="container">
+                  <div class="row pembungkus-card-ayam">
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ayam Pejantan 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ayam Pejantan 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="kampung" role="tabpanel" aria-labelledby="kampung-tab">
+                <div class="container">
+                  <div class="row pembungkus-card-ayam">
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ayam Kampung 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ayam Kampung 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="broiler" role="tabpanel" aria-labelledby="broiler-tab">
+                <div class="container">
+                  <div class="row pembungkus-card-ayam">
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ayam Broiler 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ayam Broiler 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="lainnya" role="tabpanel" aria-labelledby="lainnya-tab">
+                <div class="container">
+                  <div class="row pembungkus-card-ayam">
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ceker 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Kulit 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kategori End -->
+
+    <!-- Contact -->
+    <section class="mt-5 bg-danger" id="contact">
+      <div class="container py-5 text-white">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Hubungi kami jika ada masalah atau pertanyaan</h2>
+            <p class="py-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, odit dicta? Harum, illum veniam doloribus consequuntur porro, iste deleniti architecto nihil magnam dolorum, neque recusandae soluta laudantium perferendis?
+              Necessitatibus, consequatur?
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 text-center">
+            <p><i class="bi bi-telephone-fill text-warning"></i> Telp. 0251 8395655</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <p><i class="bi bi-envelope-open-fill text-warning"></i> support@beliayam.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- MAP -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2771108939132!2d106.8061061641937!3d-6.227148562718144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14e437f4501%3A0xfee7b40472799f14!2sGoWork%20fX%20Sudirman%20-%20Coworking%20and%20Office%20Space!5e0!3m2!1sid!2sid!4v1635950184285!5m2!1sid!2sid"
+      height="450"
+      style="width: 100%"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+    <!-- MAP End -->
+
+    <!-- Footer -->
+    <section class="bg-danger" id="footer">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-3 pb-5 logo-footer">
+            <img src="./assets/img/navbar/logo_navbar.png" alt="" />
+            <div>
+              <a class="h3 px-1 text-light" href=""><i class="bi bi-youtube"></i></a>
+              <a class="h3 px-1 text-light" href=""><i class="bi bi-facebook"></i></a>
+              <a class="h3 px-1 text-light" href=""><i class="bi bi-instagram"></i></a>
+              <a class="h3 px-1 text-light" href=""><i class="bi bi-whatsapp"></i></a>
+              <a class="h3 px-1 text-light" href=""><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col d-grid gap-2">
+            <p class="fw-bold text-light">Bantuan</p>
+            <a href="#">Kemitraan</a>
+            <a href="#">Syarat & Ketentuan</a>
+            <a href="#">Kebijakan Privasi</a>
+          </div>
+          <div class="col d-grid gap-2">
+            <p class="fw-bold text-light">GET IN TOUCH</p>
+            <a href="#">Office 8, Level 18-A Jl. Jend. Sudirman Kav. 52-53 SCBD LOT 28, Jakarta Selatan</a>
+            <a href="#">Telp. 0251 8395655</a>
+            <a href="#">Email support@beliayam.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid card-footer">
+        <div class="row">
+          <div class="col text-center">
+            <p class="text-white my-auto">@Copyright 2021 <a href="" class="text-warning">beliayam.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer End -->
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+  <!-- Lazy Load -->
+  <script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
+  <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Swipper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- My JS -->
+  <script src="./assets/js/script.js"></script>
+</html>

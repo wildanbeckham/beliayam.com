@@ -44,3 +44,11 @@ var swiper = new Swiper('.mySwiper-hero', {
 var x = window.matchMedia('(max-width: 750px)');
 myFunction(x); // Call listener function at run time
 x.addListener(myFunction); // Attach listener function on state changes
+
+$('.btn-plus, .btn-minus').on('click', function (e) {
+  const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
+  const input = $(e.target).closest('.input-group').find('input');
+  if (input.is('input')) {
+    input[0][isNegative ? 'stepDown' : 'stepUp']();
+  }
+});

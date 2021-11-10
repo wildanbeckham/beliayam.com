@@ -20,6 +20,9 @@ nav {
       width: 100%;
     }
   }
+  .active {
+    color: var(--second) !important;
+  }
 }
 // Navbar End
 
@@ -157,11 +160,99 @@ nav {
 }
 // Footer End
 
+// Kategori Page
+#kategori-page {
+  ul {
+    li {
+      button {
+        color: #000;
+        transition: 0.5s;
+      }
+      button:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      .active {
+        margin-top: -10px;
+        background-color: var(--primary) !important;
+        color: #fff;
+      }
+    }
+  }
+  .card-ayam {
+    transition: 0.2s;
+  }
+  .card-ayam:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
+// Kategori Page End
+
+// Detail Ayam Page
+#detail-page {
+  .inline-group {
+    max-width: 12rem;
+  }
+  .form-control[type='number']::-webkit-inner-spin-button,
+  .form-control[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+// Detail Ayam Page End
+
+// Keranjang Page
+#keranjang-page {
+  .inline-group {
+    max-width: 12rem;
+  }
+  .form-control[type='number']::-webkit-inner-spin-button,
+  .form-control[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.modal.right .modal-dialog {
+  position: fixed;
+  right: 0;
+  margin: auto;
+  width: 320px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+  .inline-group {
+    max-width: 12rem;
+  }
+  .form-control[type='number']::-webkit-inner-spin-button,
+  .form-control[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+// Keranjang Page End
+
 @media screen and (max-width: 991px) {
   #memilih {
     .pembungkus-memilih {
-      display: grid;
-      grid-template-columns: auto auto;
+      .card-gratis,
+      .card-halal,
+      .card-aman {
+        width: 50%;
+        img {
+          width: 70% !important;
+        }
+      }
     }
   }
 
@@ -207,6 +298,64 @@ nav {
       }
     }
   }
+
+  #kategori-page {
+    ul {
+      display: grid;
+      grid-template-columns: auto auto;
+      li {
+        button {
+          .card-body {
+            h5 {
+              font-size: 12px;
+            }
+          }
+        }
+        .active {
+          margin-top: 0px;
+        }
+      }
+    }
+    .pembungkus-card-ayam {
+      display: grid;
+      grid-template-columns: auto auto;
+      h5 {
+        font-size: 12px;
+      }
+      p,
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+
+  #detail-page {
+    h2 {
+      font-size: 16px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    h5 {
+      font-size: 12px;
+    }
+    p,
+    a,
+    button,
+    .form-control {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #detail-page {
+    padding: 0 !important;
+    img {
+      width: 50%;
+      padding: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -233,6 +382,12 @@ nav {
           padding: 5px 15px !important;
         }
       }
+    }
+  }
+
+  #detail-page {
+    img {
+      width: 70%;
     }
   }
 }
