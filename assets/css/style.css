@@ -352,8 +352,8 @@ nav .active {
     width: 50%;
     padding: 0;
   }
-  #form-step .img-form {
-    display: none;
+  #form-step .input-col {
+    padding: 10px !important;
   }
 }
 
