@@ -204,43 +204,65 @@ nav {
 #keranjang-page {
   .inline-group {
     max-width: 12rem;
-  }
-  .form-control[type='number']::-webkit-inner-spin-button,
-  .form-control[type='number']::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+    .form-control[type='number']::-webkit-inner-spin-button,
+    .form-control[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
   }
 }
 
-.modal.right .modal-dialog {
-  position: fixed;
-  right: 0;
-  margin: auto;
-  width: 320px;
-  height: 100%;
-  -webkit-transform: translate3d(0%, 0, 0);
-  -ms-transform: translate3d(0%, 0, 0);
-  -o-transform: translate3d(0%, 0, 0);
-  transform: translate3d(0%, 0, 0);
-}
-
-.modal.right .modal-content {
-  height: 100%;
-  overflow-y: auto;
-}
-
-.modal.right .modal-body {
-  padding: 15px 15px 80px;
-  .inline-group {
-    max-width: 12rem;
-  }
-  .form-control[type='number']::-webkit-inner-spin-button,
-  .form-control[type='number']::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.modal.right {
+  .modal-dialog {
+    position: fixed;
+    right: 0;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+    .modal-content {
+      height: 100%;
+      overflow-y: auto;
+      .modal-body {
+        padding: 15px 15px 80px;
+        .inline-group {
+          max-width: 12rem;
+        }
+        .form-control[type='number']::-webkit-inner-spin-button,
+        .form-control[type='number']::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
   }
 }
 // Keranjang Page End
+
+// Login Page
+#login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .col-md-6 {
+    border-radius: 15px;
+  }
+}
+// Login Page End
+
+// Form Step
+#form-step {
+  .nav-pills {
+    .active {
+      background-color: var(--primary) !important;
+    }
+  }
+}
+// Form Step End
 
 @media screen and (max-width: 991px) {
   #memilih {
@@ -300,19 +322,24 @@ nav {
   }
 
   #kategori-page {
-    ul {
-      display: grid;
-      grid-template-columns: auto auto;
-      li {
-        button {
-          .card-body {
-            h5 {
-              font-size: 12px;
+    padding: 0 !important;
+    .row {
+      padding: 0 !important;
+      ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        li {
+          padding: 0;
+          button {
+            .card-body {
+              h5 {
+                font-size: 12px;
+              }
             }
           }
-        }
-        .active {
-          margin-top: 0px;
+          .active {
+            margin-top: 0px;
+          }
         }
       }
     }
@@ -354,6 +381,12 @@ nav {
     img {
       width: 50%;
       padding: 0;
+    }
+  }
+
+  #form-step {
+    .img-form {
+      display: none;
     }
   }
 }

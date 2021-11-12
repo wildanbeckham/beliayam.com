@@ -47,10 +47,10 @@
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item border-end">
-              <a class="nav-link fw-bold" href="#">Login</a>
+              <a class="nav-link fw-bold" href="./login.html">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="#">Register</a>
+              <a class="nav-link fw-bold" href="./regist.html">Register</a>
             </li>
           </ul>
         </div>
@@ -60,11 +60,21 @@
 
     <!-- Kategori -->
     <section class="py-5" id="kategori-page">
-      <div class="container py-5">
+      <div class="container-fluid py-5">
         <div class="row pt-5">
           <div class="col pt-5">
             <ul class="nav nav-tabs row justify-content-center" id="myTab" role="tablist">
-              <li class="nav-item col-lg-3" role="presentation">
+              <li class="nav-item col-lg" role="presentation">
+                <button class="nav-link" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
+                  <div>
+                    <img src="./assets/img/kategori/1.svg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Semua Kategori</h5>
+                    </div>
+                  </div>
+                </button>
+              </li>
+              <li class="nav-item col-lg" role="presentation">
                 <button class="nav-link" id="pejantan-tab" data-bs-toggle="tab" data-bs-target="#pejantan" type="button" role="tab" aria-controls="pejantan" aria-selected="true">
                   <div>
                     <img src="./assets/img/kategori/1.svg" class="card-img-top" alt="..." />
@@ -74,7 +84,7 @@
                   </div>
                 </button>
               </li>
-              <li class="nav-item col-lg-3" role="presentation">
+              <li class="nav-item col-lg" role="presentation">
                 <button class="nav-link" id="kampung-tab" data-bs-toggle="tab" data-bs-target="#kampung" type="button" role="tab" aria-controls="kampung" aria-selected="false">
                   <div>
                     <img src="./assets/img/kategori/2.svg" class="card-img-top" alt="..." />
@@ -84,7 +94,7 @@
                   </div>
                 </button>
               </li>
-              <li class="nav-item col-lg-3" role="presentation">
+              <li class="nav-item col-lg" role="presentation">
                 <button class="nav-link" id="broiler-tab" data-bs-toggle="tab" data-bs-target="#broiler" type="button" role="tab" aria-controls="broiler" aria-selected="false">
                   <div>
                     <img src="./assets/img/kategori/3.svg" class="card-img-top" alt="..." />
@@ -94,7 +104,7 @@
                   </div>
                 </button>
               </li>
-              <li class="nav-item col-lg-3" role="presentation">
+              <li class="nav-item col-lg" role="presentation">
                 <button class="nav-link" id="lainnya-tab" data-bs-toggle="tab" data-bs-target="#lainnya" type="button" role="tab" aria-controls="lainnya" aria-selected="false">
                   <div>
                     <img src="./assets/img/kategori/4.svg" class="card-img-top" alt="..." />
@@ -106,7 +116,7 @@
               </li>
             </ul>
             <div class="tab-content pt-5" id="myTabContent">
-              <div class="tab-pane fade show" id="pejantan" role="tabpanel" aria-labelledby="pejantan-tab">
+              <div class="tab-pane show fade" id="all" role="tabpanel" aria-labelledby="all-tab">
                 <div class="container">
                   <div class="row pembungkus-card-ayam">
                     <div class="col-lg-3">
@@ -117,7 +127,39 @@
                           <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
                           <p>Rp 100.000</p>
                           <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ayam Kampung 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pejantan" role="tabpanel" aria-labelledby="pejantan-tab">
+                <div class="container">
+                  <div class="row pembungkus-card-ayam">
+                    <div class="col-lg-3">
+                      <div class="border my-2 card-ayam">
+                        <a href="#"><img src="./assets/img/terlaris/raw-board-breast-cutting-fresh-removebg-preview.png" class="card-img-top bg-white lazyload" alt="..." /></a>
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Ayam Pejantan 0.5 - 0.6 Kg</h5>
+                          <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
+                          <p>Rp 100.000</p>
+                          <div class="d-grid gap-2">
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
                           </div>
                         </div>
                       </div>
@@ -130,7 +172,7 @@
                           <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
                           <p>Rp 100.000</p>
                           <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
                           </div>
                         </div>
                       </div>
@@ -149,7 +191,7 @@
                           <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
                           <p>Rp 100.000</p>
                           <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
                           </div>
                         </div>
                       </div>
@@ -162,7 +204,7 @@
                           <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
                           <p>Rp 100.000</p>
                           <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
                           </div>
                         </div>
                       </div>
@@ -181,7 +223,7 @@
                           <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
                           <p>Rp 100.000</p>
                           <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
                           </div>
                         </div>
                       </div>
@@ -194,7 +236,7 @@
                           <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
                           <p>Rp 100.000</p>
                           <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
                           </div>
                         </div>
                       </div>
@@ -213,7 +255,7 @@
                           <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
                           <p>Rp 100.000</p>
                           <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
                           </div>
                         </div>
                       </div>
@@ -226,7 +268,7 @@
                           <p class="card-text small text-danger fw-bold"><i class="bi bi-basket2"></i> 0,5 kg/pack</p>
                           <p>Rp 100.000</p>
                           <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-danger mt-3">Pesan</a>
+                            <a href="./detail.html" class="btn btn-danger mt-3">Pesan</a>
                           </div>
                         </div>
                       </div>

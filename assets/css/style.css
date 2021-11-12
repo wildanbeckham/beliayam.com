@@ -197,8 +197,8 @@ nav .active {
   max-width: 12rem;
 }
 
-#keranjang-page .form-control[type='number']::-webkit-inner-spin-button,
-#keranjang-page .form-control[type='number']::-webkit-outer-spin-button {
+#keranjang-page .inline-group .form-control[type='number']::-webkit-inner-spin-button,
+#keranjang-page .inline-group .form-control[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -213,23 +213,44 @@ nav .active {
   transform: translate3d(0%, 0, 0);
 }
 
-.modal.right .modal-content {
+.modal.right .modal-dialog .modal-content {
   height: 100%;
   overflow-y: auto;
 }
 
-.modal.right .modal-body {
+.modal.right .modal-dialog .modal-content .modal-body {
   padding: 15px 15px 80px;
 }
 
-.modal.right .modal-body .inline-group {
+.modal.right .modal-dialog .modal-content .modal-body .inline-group {
   max-width: 12rem;
 }
 
-.modal.right .modal-body .form-control[type='number']::-webkit-inner-spin-button,
-.modal.right .modal-body .form-control[type='number']::-webkit-outer-spin-button {
+.modal.right .modal-dialog .modal-content .modal-body .form-control[type='number']::-webkit-inner-spin-button,
+.modal.right .modal-dialog .modal-content .modal-body .form-control[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+#login-page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#login-page .col-md-6 {
+  border-radius: 15px;
+}
+
+#form-step .nav-pills .active {
+  background-color: var(--primary) !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -272,16 +293,25 @@ nav .active {
   #footer .logo-footer img {
     width: 50%;
   }
-  #kategori-page ul {
+  #kategori-page {
+    padding: 0 !important;
+  }
+  #kategori-page .row {
+    padding: 0 !important;
+  }
+  #kategori-page .row ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
   }
-  #kategori-page ul li button .card-body h5 {
+  #kategori-page .row ul li {
+    padding: 0;
+  }
+  #kategori-page .row ul li button .card-body h5 {
     font-size: 12px;
   }
-  #kategori-page ul li .active {
+  #kategori-page .row ul li .active {
     margin-top: 0px;
   }
   #kategori-page .pembungkus-card-ayam {
@@ -321,6 +351,9 @@ nav .active {
   #detail-page img {
     width: 50%;
     padding: 0;
+  }
+  #form-step .img-form {
+    display: none;
   }
 }
 
